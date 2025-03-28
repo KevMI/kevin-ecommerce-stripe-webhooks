@@ -1,0 +1,93 @@
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  row-gap: 75px;
+  width: 80%;
+  margin: auto;
+
+  .card {
+
+    button {
+      background-color: green;
+    }
+
+    img {
+      aspect-ratio: 1 / 1;
+      max-width: 100%;
+      width: 80%;
+      object-fit: cover;
+      border-radius: 2%;
+    }
+  }
+}
+
+
+.cart-button {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: green;
+}
+
+.cart {
+  border: 2px solid black;
+  position: fixed;
+  right: 0;
+  margin-top: 5dvh;
+  background-color: rgb(24, 24, 24);
+  width: 50dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 3%;
+  padding: 0.5rem;
+
+  .cart-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    img {
+      aspect-ratio: 1 / 1;
+      max-width: 20%;
+      object-fit: cover;
+    }
+
+    button {
+      padding: 10px;
+      margin-left: 5px;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .cart-item-increase {
+      background-color: green;
+    }
+
+    .cart-item-delete {
+      background-color: red;
+    }
+  }
+}
+
+.cart-actions {
+  display: flex;
+  margin: auto 10px auto 10px;
+  gap: 1rem;
+
+  button {
+    width: 30%;
+    height: 6dvh;
+  }
+
+  .button-checkout {
+    background-color: green;
+  }
+
+  .button-reset {
+    background-color: red;
+  }
+}

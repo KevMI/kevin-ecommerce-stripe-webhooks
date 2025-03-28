@@ -1,0 +1,41 @@
+header {
+  min-height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  nav {
+      padding-left: 1rem;
+
+      .active {
+          color: white;
+      }
+
+      ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          display: flex;
+          gap: 0.5rem;
+      }
+  }
+}
+
+
+
+
+/* footer {
+  min-height: 20dvh;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: grey;
+
+  & > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
+ */
